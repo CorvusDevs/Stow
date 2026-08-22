@@ -4,19 +4,23 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Stow: Zip, Unzip and Archive</title>
-  <meta name="description" content="Stow is a private archive utility for Mac, iPhone, and iPad. Mac gets a complete archive toolkit, while mobile stays focused on Files workflows.">
+  <meta name="description" content="Stow is a privacy-first archive utility for Mac, iPhone, and iPad, with encryption, archive browsing, and no file uploads.">
   <link rel="canonical" href="https://corvusdevs.github.io/Stow/">
+  <!-- HREFLANG_BLOCK -->
+  <link rel="alternate" hreflang="en" href="https://corvusdevs.github.io/Stow/">
+  <link rel="alternate" hreflang="x-default" href="https://corvusdevs.github.io/Stow/">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://corvusdevs.github.io/Stow/">
   <meta property="og:title" content="Stow: Zip, Unzip and Archive">
-  <meta property="og:description" content="A private archive utility for Mac, with a focused Files companion on iPhone and iPad.">
+  <meta property="og:description" content="A privacy-first archive utility for Mac, iPhone, and iPad, with no file uploads.">
+  <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://corvusdevs.github.io/Stow/og-image.png">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:site_name" content="CorvusDevs">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Stow: Zip, Unzip and Archive">
-  <meta name="twitter:description" content="A private archive utility for Mac, with a focused Files companion on iPhone and iPad.">
+  <meta name="twitter:description" content="A privacy-first archive utility for Mac, iPhone, and iPad, with no file uploads.">
   <meta name="twitter:image" content="https://corvusdevs.github.io/Stow/og-image.png">
   <meta name="twitter:image:alt" content="Stow archive utility for Apple devices">
   <meta name="robots" content="index, follow">
@@ -24,7 +28,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Stow","description":"A private archive utility for Mac, iPhone, and iPad. Mac gets a complete archive toolkit, while mobile stays focused on Files workflows.","operatingSystem":"macOS 15.0+, iOS 26.0+, iPadOS 26.0+","applicationCategory":"UtilitiesApplication","applicationSubCategory":"File Management","screenshot":"https://corvusdevs.github.io/Stow/assets/mac-drop.png","downloadUrl":"https://apps.apple.com/app/id6801190003","author":{"@type":"Organization","name":"CorvusDevs","url":"https://corvusdevs.github.io"}}
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Stow","description":"A privacy-first archive utility for Mac, iPhone, and iPad, with no file uploads.","operatingSystem":"macOS 15.0+, iOS 26.0+, iPadOS 26.0+","applicationCategory":"UtilitiesApplication","applicationSubCategory":"File Management","screenshot":"https://corvusdevs.github.io/Stow/assets/mac-drop.png","downloadUrl":"https://apps.apple.com/app/id6801190003","offers":{"@type":"Offer","price":"0.99","priceCurrency":"USD"},"author":{"@type":"Organization","name":"CorvusDevs","url":"https://corvusdevs.github.io"}}
   </script>
   <style>
     /* ac-no-horizontal-scroll v1 */
@@ -38,15 +42,16 @@
   <header class="site-header">
     <nav class="nav shell" aria-label="Primary navigation">
       <a class="brand" href="./"><img src="assets/stow-icon.png" width="35" height="35" alt="">Stow</a>
-      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-links">Menu</button>
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-links" aria-label="Menu"><span aria-hidden="true"></span></button>
       <!-- ac-nav-hamburger v2 -->
       <ul class="nav-links" id="site-links" data-open="false">
-        <li><a href="#features">Features</a></li>
-        <li><a href="#mac">Mac</a></li>
-        <li><a href="#mobile">iPhone and iPad</a></li>
-        <li><a href="support.html">Support</a></li>
-        <li><a class="nav-button" href="https://apps.apple.com/app/id6801190003">View on App Store</a></li>
+        <li><a href="#features" data-i18n="nav_features">Features</a></li>
+        <li><a href="#mac" data-i18n="nav_mac">Mac</a></li>
+        <li><a href="#mobile" data-i18n="nav_mobile">iPhone and iPad</a></li>
+        <li><a href="support.html" data-i18n="nav_support">Support</a></li>
+        <li><a class="nav-button" href="https://apps.apple.com/app/id6801190003" data-i18n="cta_app_store">View on the App Store</a></li>
       </ul>
+      <div class="lang-wrap"><button class="lang-button" type="button" aria-expanded="false" aria-controls="language-menu"><span aria-hidden="true">文A</span><span data-i18n="language_label">Language</span></button><div class="lang-menu" id="language-menu"><a href="./" lang="en">English</a></div></div>
     </nav>
   </header>
 
@@ -54,18 +59,18 @@
     <section class="hero">
       <div class="shell hero-grid">
         <div>
-          <p class="eyebrow">Archive utility for Apple devices</p>
-          <h1>Your files, neatly packed.</h1>
-          <p class="hero-copy">Stow makes everyday archive work feel calm and deliberate. Mac gets the complete archive toolkit. iPhone and iPad stay focused on the Files workflows you need on the move.</p>
+          <p class="eyebrow" data-i18n="hero_eyebrow">Archive utility for Apple devices</p>
+          <h1 data-i18n="hero_title">Your files, neatly packed.</h1>
+          <p class="hero-copy" data-i18n="hero_copy">Stow makes everyday archive work feel calm and deliberate. Mac gets the complete archive toolkit. iPhone and iPad stay focused on the Files workflows you need on the move.</p>
           <div class="hero-actions">
-            <a class="button button-primary" href="https://apps.apple.com/app/id6801190003">View on the App Store</a>
-            <a class="button button-secondary" href="#features">Explore features</a>
+            <a class="button button-primary" href="https://apps.apple.com/app/id6801190003" data-i18n="cta_app_store">View on the App Store</a>
+            <a class="button button-secondary" href="#features" data-i18n="cta_features">Explore features</a>
           </div>
-          <p class="launch-note">One purchase. No account. No tracking.</p>
+          <p class="launch-note" data-i18n="hero_note">One purchase. No account. No tracking.</p>
           <div class="trust-row" aria-label="Product highlights">
-            <span class="chip">ZIP and 7z encryption</span>
-            <span class="chip">Mac, iPhone, iPad</span>
-            <span class="chip">Works with your files</span>
+            <span class="chip" data-i18n="chip_files">No file uploads</span>
+            <span class="chip" data-i18n="chip_encryption">ZIP and 7z encryption</span>
+            <span class="chip" data-i18n="chip_devices">Mac, iPhone, iPad</span>
           </div>
         </div>
         <div class="archive-scene" aria-hidden="true">
@@ -82,38 +87,38 @@
 
     <section class="section section-alt" id="features">
       <div class="shell">
-        <div class="section-header"><p class="eyebrow">Everything in its place</p><h2>Archive work without the clutter.</h2><p>Stow keeps the common path simple, then gives you the control you need when a file deserves more care.</p></div>
+        <div class="section-header"><p class="eyebrow" data-i18n="feature_eyebrow">Everything in its place</p><h2 data-i18n="feature_title">Archive work without the clutter.</h2><p data-i18n="feature_copy">Stow keeps the common path simple, then gives you the control you need when a file deserves more care.</p></div>
         <div class="feature-grid">
-          <article class="feature-card"><div class="feature-symbol">01</div><h3>Pack and unpack</h3><p>Create archives from files or folders, then extract them with the right destination and options already in view.</p></article>
-          <article class="feature-card"><div class="feature-symbol">02</div><h3>Browse before extracting</h3><p>Look inside an archive on the Mac before it changes your disk. Preview its structure, then extract only what you need.</p></article>
-          <article class="feature-card"><div class="feature-symbol">03</div><h3>Protect sensitive files</h3><p>Create ZIP and 7z archives with AES-256 passwords. 7z can also encrypt the list of file names.</p></article>
-          <article class="feature-card"><div class="feature-symbol">04</div><h3>Made for real workflows</h3><p>Queue several jobs, watch their progress, pause when needed, and pick up where you left off.</p></article>
-          <article class="feature-card"><div class="feature-symbol">05</div><h3>Verify and split</h3><p>Create SHA-256 checksum files and split a large archive into smaller volumes for easier transfer.</p></article>
-          <article class="feature-card"><div class="feature-symbol">06</div><h3>Formats that travel</h3><p>Create ZIP, 7-Zip, TAR and common compressed TAR formats. Open a broad range of archive files.</p></article>
+          <article class="feature-card"><div class="feature-symbol">ZIP</div><h3 data-i18n="feature_pack_title">Pack and unpack</h3><p data-i18n="feature_pack_copy">Create archives from files or folders, then extract them with the right destination and options already in view.</p></article>
+          <article class="feature-card"><div class="feature-symbol">VIEW</div><h3 data-i18n="feature_browse_title">Browse before extracting</h3><p data-i18n="feature_browse_copy">Look inside an archive on the Mac before it changes your disk. Preview its structure, then extract only what you need.</p></article>
+          <article class="feature-card"><div class="feature-symbol">AES</div><h3 data-i18n="feature_protect_title">Protect sensitive files</h3><p data-i18n="feature_protect_copy">Create ZIP and 7z archives with AES-256 passwords. 7z can also encrypt the list of file names.</p></article>
+          <article class="feature-card"><div class="feature-symbol">QUEUE</div><h3 data-i18n="feature_queue_title">Made for real workflows</h3><p data-i18n="feature_queue_copy">Queue several jobs, create SHA-256 checksums, and split large archives into smaller volumes.</p></article>
+          <article class="feature-card"><div class="feature-symbol">SHA</div><h3 data-i18n="feature_verify_title">Verify and split</h3><p data-i18n="feature_verify_copy">Create SHA-256 checksum files and split a large archive into smaller volumes for easier transfer.</p></article>
+          <article class="feature-card"><div class="feature-symbol">TAR</div><h3 data-i18n="feature_formats_title">Formats that travel</h3><p data-i18n="feature_formats_copy">Create ZIP, 7-Zip, TAR and common compressed TAR formats. Open a broad range of archive files.</p></article>
         </div>
       </div>
     </section>
 
     <section class="section" id="mac">
       <div class="shell screens">
-        <div class="screens-copy"><p class="eyebrow">Mac</p><h2>At home on your desktop.</h2><p>Drop something on Stow and it knows the next sensible move. The Mac app also gives you the complete archive toolkit when the job needs more than a quick ZIP.</p><ul class="checklist"><li>Drag files or folders in to pack or unpack</li><li>Browse an archive and selectively extract its contents</li><li>Use Finder contextual actions for compression and extraction</li><li>Keep advanced settings close, not in the way</li></ul></div>
+        <div class="screens-copy"><p class="eyebrow" data-i18n="nav_mac">Mac</p><h2 data-i18n="mac_title">At home on your desktop.</h2><p data-i18n="mac_copy">Drop something on Stow and it knows the next sensible move. The Mac app also gives you the complete archive toolkit when the job needs more than a quick ZIP.</p><ul class="checklist"><li data-i18n="mac_point_drop">Drag files or folders in to pack or unpack</li><li data-i18n="mac_point_browse">Browse an archive and selectively extract its contents</li><li data-i18n="mac_point_finder">Use Finder contextual actions for compression and extraction</li><li data-i18n="mac_point_options">Keep advanced settings close, not in the way</li></ul></div>
         <div class="screen-stack"><figure class="screen-frame"><img src="assets/mac-drop.png" alt="Stow for Mac ready to pack or unpack dropped files"></figure><figure class="screen-frame"><img src="assets/mac-browser.png" alt="Stow archive browser on Mac"></figure></div>
       </div>
     </section>
 
     <section class="section section-alt" id="mobile">
       <div class="shell platforms">
-        <article class="platform-card"><p class="platform-kicker">iPhone and iPad</p><h3>Made for the Files app.</h3><p>Mobile Stow is a focused companion for packing and unpacking the files already on your device.</p><ul><li>Choose files and folders from Files</li><li>Pick format and compression level</li><li>Exclude hidden files or macOS metadata</li><li>Track current and completed work in a clear queue</li></ul></article>
-        <article class="platform-card"><p class="platform-kicker">A deliberate scope</p><h3>The right tool for each device.</h3><p>Mac has the full archive workstation. Mobile stays fast and focused on file workflows that make sense on a touch device.</p><ul><li>Mac-only features stay desktop-first</li><li>Mobile never pretends to mirror every Mac workflow</li><li>Both versions are designed around their platform</li><li>Privacy is built into the whole product</li></ul></article>
+        <article class="platform-card"><p class="platform-kicker" data-i18n="nav_mobile">iPhone and iPad</p><h3 data-i18n="mobile_title">Made for the Files app.</h3><p data-i18n="mobile_copy">Mobile Stow is a focused companion for packing and unpacking the files already on your device.</p><ul><li data-i18n="mobile_point_choose">Choose files and folders from Files</li><li data-i18n="mobile_point_format">Pick format and compression level</li><li data-i18n="mobile_point_filter">Exclude hidden files or macOS metadata</li><li data-i18n="mobile_point_queue">Track current and completed work in a clear queue</li></ul></article>
+        <article class="platform-card"><p class="platform-kicker" data-i18n="scope_eyebrow">A deliberate scope</p><h3 data-i18n="scope_title">The right tool for each device.</h3><p data-i18n="scope_copy">Mac has the full archive workstation. Mobile stays fast and focused on file workflows that make sense on a touch device.</p><ul><li data-i18n="scope_point_mac">Mac-only features stay desktop-first</li><li data-i18n="scope_point_mobile">Mobile never pretends to mirror every Mac workflow</li><li data-i18n="scope_point_platform">Both versions are designed around their platform</li><li data-i18n="scope_point_privacy">Privacy is built into the whole product</li></ul></article>
       </div>
     </section>
 
-    <section class="closing"><div class="shell"><p class="eyebrow">A quieter way to archive</p><h2>Less time managing files. More confidence sending them.</h2><p>Stow is built for the routine transfer, the careful backup, and the archive you want to understand before opening.</p><a class="button button-primary" href="https://apps.apple.com/app/id6801190003">View on the App Store</a></div></section>
+    <section class="closing"><div class="shell"><p class="eyebrow" data-i18n="closing_eyebrow">A quieter way to archive</p><h2 data-i18n="closing_title">Less time managing files. More confidence sending them.</h2><p data-i18n="closing_copy">Stow is built for the routine transfer, the careful backup, and the archive you want to understand before opening.</p><a class="button button-primary" href="https://apps.apple.com/app/id6801190003" data-i18n="cta_app_store">View on the App Store</a></div></section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-row"><span>Stow, by CorvusDevs.</span><div class="footer-links"><a href="support.html">Support</a><a href="privacy.html">Privacy</a><a href="https://github.com/CorvusDevs/Stow">GitHub</a><a href="mailto:corvusdevs@outlook.com">Contact</a></div></div></footer>
+  <footer class="site-footer"><div class="shell footer-row"><span data-i18n="footer_credit">Stow, by CorvusDevs.</span><div class="footer-links"><a href="support.html" data-i18n="nav_support">Support</a><a href="privacy.html" data-i18n="nav_privacy">Privacy</a><a href="https://github.com/CorvusDevs/Stow">GitHub</a><a href="mailto:corvusdevs@outlook.com" data-i18n="nav_contact">Contact</a></div></div></footer>
   <script>
-    (function () { const button = document.querySelector('.nav-toggle'); const links = document.querySelector('#site-links'); if (!button || !links) return; button.addEventListener('click', function () { const open = links.dataset.open !== 'true'; links.dataset.open = String(open); button.setAttribute('aria-expanded', String(open)); }); document.addEventListener('click', function (event) { if (!links.contains(event.target) && !button.contains(event.target)) { links.dataset.open = 'false'; button.setAttribute('aria-expanded', 'false'); } }); }());
+    (function () { const button = document.querySelector('.nav-toggle'); const links = document.querySelector('#site-links'); const langButton = document.querySelector('.lang-button'); const langMenu = document.querySelector('.lang-menu'); if (button && links) { button.addEventListener('click', function () { const open = links.dataset.open !== 'true'; links.dataset.open = String(open); button.setAttribute('aria-expanded', String(open)); }); } if (langButton && langMenu) { langButton.addEventListener('click', function () { const open = !langMenu.classList.contains('open'); langMenu.classList.toggle('open', open); langButton.setAttribute('aria-expanded', String(open)); }); } document.addEventListener('click', function (event) { if (button && links && !links.contains(event.target) && !button.contains(event.target)) { links.dataset.open = 'false'; button.setAttribute('aria-expanded', 'false'); } if (langButton && langMenu && !langMenu.contains(event.target) && !langButton.contains(event.target)) { langMenu.classList.remove('open'); langButton.setAttribute('aria-expanded', 'false'); } }); }());
   </script>
 </body>
 </html>

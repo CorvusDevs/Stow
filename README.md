@@ -13,7 +13,7 @@
   <a href="https://apps.apple.com/app/id6801190003">App Store</a>
 </p>
 
-Stow is a private archive utility for Mac, iPhone, and iPad. It packs, unpacks, browses, encrypts, splits, and verifies archives without an account, tracking, or advertising.
+Stow is a privacy-first archive utility for Mac, iPhone, and iPad. It packs, unpacks, browses, encrypts, splits, and verifies archives without an account, tracking, advertising, or file uploads.
 
 ## What it does
 

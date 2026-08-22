@@ -1,0 +1,15 @@
+.DS_Store
+*.swift
+*.xcodeproj/
+*.entitlements
+*.plist
+*.xcstrings
+*.icns
+*.p8
+Assets.xcassets/
+Sources/
+Tests/
+scripts/
+Vendor/
+.env
+.*-env
