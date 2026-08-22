@@ -20,6 +20,7 @@ Stow is a privacy-first archive utility for Mac, iPhone, and iPad. It packs, unp
 - Create ZIP, 7-Zip, TAR, and common compressed TAR archives.
 - Open a broad range of archive formats.
 - Browse an archive on Mac before extracting anything.
+- Limit archive expansion and item counts to reduce the risk from zip bombs.
 - Create AES-256 encrypted ZIP and 7z archives. 7z can hide file names too.
 - Queue work, verify archives with SHA-256 checksums, and split large archives into smaller volumes.
 - Integrate with Finder on Mac for quick compression and extraction.
@@ -28,6 +29,10 @@ Stow is a privacy-first archive utility for Mac, iPhone, and iPad. It packs, unp
 ## Platform focus
 
 The Mac app is the full archive workstation. iPhone and iPad are deliberately focused companions for packing and unpacking files from the Files app. Mobile does not claim feature parity with Mac.
+
+## Safer extraction on Mac
+
+Before extracted files reach their destination, Stow checks archive paths, symlink targets, declared sizes, streamed output, and item counts. Suspicious archives are stopped in a temporary staging area. These limits reduce the risk from decompression bombs, commonly called zip bombs, without claiming that any archive utility can recognize every malicious file.
 
 ## Support
 

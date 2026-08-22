@@ -19,6 +19,8 @@
   "feature_eyebrow": { "text": "Everything in its place", "context": "marketing" },
   "feature_title": { "text": "Archive work without the clutter.", "context": "marketing" },
   "feature_copy": { "text": "Stow keeps the common path simple, then gives you the control you need when a file deserves more care.", "context": "marketing" },
+  "feature_safety_title": { "text": "Protection against zip bombs", "context": "marketing" },
+  "feature_safety_copy": { "text": "On Mac, Stow limits archive expansion and item counts, validates paths and links, and stages files before they reach your destination.", "context": "marketing" },
   "feature_verify_title": { "text": "Verify and split", "context": "marketing" },
   "feature_verify_copy": { "text": "Create SHA-256 checksum files and split a large archive into smaller volumes for easier transfer.", "context": "marketing" },
   "feature_pack_title": { "text": "Pack and unpack", "context": "marketing" },

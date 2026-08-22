@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>Stow: Zip, Unzip and Archive</title>
-  <meta name="description" content="Stow is a privacy-first archive utility for Mac, iPhone, and iPad, with encryption, archive browsing, and no file uploads.">
+  <meta name="description" content="Stow is a privacy-first archive utility for Apple devices, with Mac protection against zip bombs, encryption, archive browsing, and no file uploads.">
   <link rel="canonical" href="https://corvusdevs.github.io/Stow/">
   <!-- HREFLANG_BLOCK -->
   <link rel="alternate" hreflang="en" href="https://corvusdevs.github.io/Stow/">
@@ -12,7 +12,7 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://corvusdevs.github.io/Stow/">
   <meta property="og:title" content="Stow: Zip, Unzip and Archive">
-  <meta property="og:description" content="A privacy-first archive utility for Mac, iPhone, and iPad, with no file uploads.">
+  <meta property="og:description" content="A privacy-first archive utility with safer Mac extraction, encryption, and no file uploads.">
   <meta property="og:locale" content="en_US">
   <meta property="og:image" content="https://corvusdevs.github.io/Stow/og-image.png">
   <meta property="og:image:width" content="1200">
@@ -20,7 +20,7 @@
   <meta property="og:site_name" content="CorvusDevs">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Stow: Zip, Unzip and Archive">
-  <meta name="twitter:description" content="A privacy-first archive utility for Mac, iPhone, and iPad, with no file uploads.">
+  <meta name="twitter:description" content="A privacy-first archive utility with safer Mac extraction, encryption, and no file uploads.">
   <meta name="twitter:image" content="https://corvusdevs.github.io/Stow/og-image.png">
   <meta name="twitter:image:alt" content="Stow archive utility for Apple devices">
   <meta name="robots" content="index, follow">
@@ -28,7 +28,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
   <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Stow","description":"A privacy-first archive utility for Mac, iPhone, and iPad, with no file uploads.","operatingSystem":"macOS 15.0+, iOS 26.0+, iPadOS 26.0+","applicationCategory":"UtilitiesApplication","applicationSubCategory":"File Management","screenshot":"https://corvusdevs.github.io/Stow/assets/mac-drop.png","downloadUrl":"https://apps.apple.com/app/id6801190003","offers":{"@type":"Offer","price":"0.99","priceCurrency":"USD"},"author":{"@type":"Organization","name":"CorvusDevs","url":"https://corvusdevs.github.io"}}
+  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Stow","description":"A privacy-first archive utility with Mac protection against zip bombs, encryption, archive browsing, and no file uploads.","operatingSystem":"macOS 15.0+, iOS 26.0+, iPadOS 26.0+","applicationCategory":"UtilitiesApplication","applicationSubCategory":"File Management","screenshot":"https://corvusdevs.github.io/Stow/assets/mac-drop.png","downloadUrl":"https://apps.apple.com/app/id6801190003","offers":{"@type":"Offer","price":"0.99","priceCurrency":"USD"},"author":{"@type":"Organization","name":"CorvusDevs","url":"https://corvusdevs.github.io"}}
   </script>
   <style>
     /* ac-no-horizontal-scroll v1 */
@@ -89,6 +89,7 @@
       <div class="shell">
         <div class="section-header"><p class="eyebrow" data-i18n="feature_eyebrow">Everything in its place</p><h2 data-i18n="feature_title">Archive work without the clutter.</h2><p data-i18n="feature_copy">Stow keeps the common path simple, then gives you the control you need when a file deserves more care.</p></div>
         <div class="feature-grid">
+          <article class="feature-card feature-card-safety"><div class="feature-symbol">SAFE</div><h3 data-i18n="feature_safety_title">Protection against zip bombs</h3><p data-i18n="feature_safety_copy">On Mac, Stow limits archive expansion and item counts, validates paths and links, and stages files before they reach your destination.</p><div class="safety-receipt" aria-hidden="true"><span>PATH</span><span>SIZE</span><span>ITEMS</span></div></article>
           <article class="feature-card"><div class="feature-symbol">ZIP</div><h3 data-i18n="feature_pack_title">Pack and unpack</h3><p data-i18n="feature_pack_copy">Create archives from files or folders, then extract them with the right destination and options already in view.</p></article>
           <article class="feature-card"><div class="feature-symbol">VIEW</div><h3 data-i18n="feature_browse_title">Browse before extracting</h3><p data-i18n="feature_browse_copy">Look inside an archive on the Mac before it changes your disk. Preview its structure, then extract only what you need.</p></article>
           <article class="feature-card"><div class="feature-symbol">AES</div><h3 data-i18n="feature_protect_title">Protect sensitive files</h3><p data-i18n="feature_protect_copy">Create ZIP and 7z archives with AES-256 passwords. 7z can also encrypt the list of file names.</p></article>
