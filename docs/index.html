@@ -48,6 +48,7 @@
         <li><a href="#features" data-i18n="nav_features">Features</a></li>
         <li><a href="#mac" data-i18n="nav_mac">Mac</a></li>
         <li><a href="#mobile" data-i18n="nav_mobile">iPhone and iPad</a></li>
+        <li><a href="changelog.html" data-i18n="nav_updates">Updates</a></li>
         <li><a href="support.html" data-i18n="nav_support">Support</a></li>
         <li><a class="nav-button" href="https://apps.apple.com/app/id6801190003" data-i18n="cta_app_store">View on the App Store</a></li>
       </ul>
@@ -117,7 +118,7 @@
     <section class="closing"><div class="shell"><p class="eyebrow" data-i18n="closing_eyebrow">A quieter way to archive</p><h2 data-i18n="closing_title">Less time managing files. More confidence sending them.</h2><p data-i18n="closing_copy">Stow is built for the routine transfer, the careful backup, and the archive you want to understand before opening.</p><a class="button button-primary" href="https://apps.apple.com/app/id6801190003" data-i18n="cta_app_store">View on the App Store</a></div></section>
   </main>
 
-  <footer class="site-footer"><div class="shell footer-row"><span data-i18n="footer_credit">Stow, by CorvusDevs.</span><div class="footer-links"><a href="support.html" data-i18n="nav_support">Support</a><a href="privacy.html" data-i18n="nav_privacy">Privacy</a><a href="https://github.com/CorvusDevs/Stow">GitHub</a><a href="mailto:corvusdevs@outlook.com" data-i18n="nav_contact">Contact</a></div></div></footer>
+  <footer class="site-footer"><div class="shell footer-row"><span data-i18n="footer_credit">Stow, by CorvusDevs.</span><div class="footer-links"><a href="changelog.html" data-i18n="nav_updates">Updates</a><a href="support.html" data-i18n="nav_support">Support</a><a href="privacy.html" data-i18n="nav_privacy">Privacy</a><a href="https://github.com/CorvusDevs/Stow">GitHub</a><a href="mailto:corvusdevs@outlook.com" data-i18n="nav_contact">Contact</a></div></div></footer>
   <script>
     (function () { const button = document.querySelector('.nav-toggle'); const links = document.querySelector('#site-links'); const langButton = document.querySelector('.lang-button'); const langMenu = document.querySelector('.lang-menu'); if (button && links) { button.addEventListener('click', function () { const open = links.dataset.open !== 'true'; links.dataset.open = String(open); button.setAttribute('aria-expanded', String(open)); }); } if (langButton && langMenu) { langButton.addEventListener('click', function () { const open = !langMenu.classList.contains('open'); langMenu.classList.toggle('open', open); langButton.setAttribute('aria-expanded', String(open)); }); } document.addEventListener('click', function (event) { if (button && links && !links.contains(event.target) && !button.contains(event.target)) { links.dataset.open = 'false'; button.setAttribute('aria-expanded', 'false'); } if (langButton && langMenu && !langMenu.contains(event.target) && !langButton.contains(event.target)) { langMenu.classList.remove('open'); langButton.setAttribute('aria-expanded', 'false'); } }); }());
   </script>
