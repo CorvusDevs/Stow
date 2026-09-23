@@ -2,6 +2,7 @@
   "nav_features": { "text": "Features", "context": "label" },
   "nav_mac": { "text": "Mac", "context": "label" },
   "nav_mobile": { "text": "iPhone and iPad", "context": "label" },
+  "nav_updates": { "text": "Updates", "context": "label" },
   "nav_support": { "text": "Support", "context": "label" },
   "nav_privacy": { "text": "Privacy", "context": "label" },
   "nav_contact": { "text": "Contact", "context": "label" },

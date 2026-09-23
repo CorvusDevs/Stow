@@ -8,6 +8,7 @@
 
 <p align="center">
   <a href="https://corvusdevs.github.io/Stow/">Website</a> ·
+  <a href="https://corvusdevs.github.io/Stow/changelog.html">Updates</a> ·
   <a href="https://corvusdevs.github.io/Stow/support.html">Support</a> ·
   <a href="https://corvusdevs.github.io/Stow/privacy.html">Privacy</a> ·
   <a href="https://apps.apple.com/app/id6801190003">App Store</a>
