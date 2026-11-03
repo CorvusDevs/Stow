@@ -1,0 +1,42 @@
+{
+  "appStoreId": 6801190003,
+  "sourcePage": "https://apps.apple.com/us/app/stow-zip-unzip-archive/id6801190003?uo=4",
+  "items": [
+    {
+      "platform": "Mac",
+      "description": "Browse an archive on Mac",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/d5/06/43/d5064377-8dd6-fe4a-b26c-3c70f4b5a73f/03-browser_framed.png/2880x1800bb.jpg",
+      "sourceWidth": 2880,
+      "sourceHeight": 1800,
+      "asset": "assets/gallery/mac-3.jpg",
+      "width": 1440,
+      "height": 900,
+      "bytes": 59046,
+      "sha256": "e8da3864d1ea9828f7cbfe5492cb8d9cd225de548ccbeb744dd26d3df50e1dc1"
+    },
+    {
+      "platform": "iPhone",
+      "description": "Choose Files for a new archive on iPhone",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource211/v4/5e/85/74/5e8574cc-3b87-4cc7-d45d-f645dddac335/01-home_framed.png/1320x2868bb.jpg",
+      "sourceWidth": 1320,
+      "sourceHeight": 2868,
+      "asset": "assets/gallery/phone-1.jpg",
+      "width": 663,
+      "height": 1440,
+      "bytes": 60494,
+      "sha256": "1730ac672c6bd96b1365eb8c82baf5865b873fc7cb65bf0754d0c31740e251be"
+    },
+    {
+      "platform": "iPad",
+      "description": "Archive work queue on iPad",
+      "source": "https://is1-ssl.mzstatic.com/image/thumb/PurpleSource221/v4/01/a9/ae/01a9ae19-f17b-927e-784b-215e067884b3/02-queue_framed.png/2732x2048bb.jpg",
+      "sourceWidth": 2732,
+      "sourceHeight": 2048,
+      "asset": "assets/gallery/pad-2.jpg",
+      "width": 1440,
+      "height": 1079,
+      "bytes": 68806,
+      "sha256": "73f7ed05f7c15a3db2de1380aa9b9e522a9f60fa9e0059de4832298a71b51618"
+    }
+  ]
+}

@@ -27,9 +27,28 @@
   <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
   <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <script type="application/ld+json">
-  {"@context":"https://schema.org","@type":"SoftwareApplication","name":"Stow","description":"A privacy-first archive utility with Mac protection against zip bombs, encryption, archive browsing, and no file uploads.","operatingSystem":"macOS 15.0+, iOS 26.0+, iPadOS 26.0+","applicationCategory":"UtilitiesApplication","applicationSubCategory":"File Management","screenshot":"https://corvusdevs.github.io/Stow/assets/mac-drop.png","downloadUrl":"https://apps.apple.com/app/id6801190003","offers":{"@type":"Offer","price":"0.99","priceCurrency":"USD"},"author":{"@type":"Organization","name":"CorvusDevs","url":"https://corvusdevs.github.io"}}
-  </script>
+  <script type="application/ld+json">{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "Stow",
+  "description": "A privacy-first archive utility with Mac protection against zip bombs, encryption, archive browsing, and no file uploads.",
+  "operatingSystem": "macOS 15.0+, iOS 26.0+, iPadOS 26.0+",
+  "applicationCategory": "UtilitiesApplication",
+  "applicationSubCategory": "File Management",
+  "screenshot": "https://corvusdevs.github.io/Stow/assets/mac-drop.png",
+  "downloadUrl": "https://apps.apple.com/app/id6801190003",
+  "offers": {
+    "@type": "Offer",
+    "price": "0.99",
+    "priceCurrency": "USD"
+  },
+  "author": {
+    "@type": "Organization",
+    "name": "CorvusDevs",
+    "url": "https://corvusdevs.github.io"
+  },
+  "softwareVersion": "1.0.2"
+}</script>
   <style>
     /* ac-no-horizontal-scroll v1 */
     html, body { overflow-x: clip; max-width: 100%; }
@@ -37,6 +56,7 @@
     pre, table { max-width: 100%; overflow-x: auto; }
   </style>
   <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
   <header class="site-header">
@@ -86,7 +106,10 @@
       </div>
     </section>
 
-    <section class="section section-alt" id="features">
+    <!-- OFFICIAL-GALLERY:START -->
+<section class="official-gallery" aria-labelledby="official-gallery-title"><h2 id="official-gallery-title">Screenshots</h2><div class="official-gallery-grid"><figure><a href="assets/gallery/mac-3.jpg"><img lang="en" src="assets/gallery/mac-3.jpg" alt="Stow: Zip, Unzip &amp; Archive: Browse an archive on Mac (Mac App Store)" width="1440" height="900" loading="lazy" decoding="async"></a><figcaption><strong>Mac App Store</strong><span lang="en">Browse an archive on Mac</span></figcaption></figure><figure><a href="assets/gallery/phone-1.jpg"><img lang="en" src="assets/gallery/phone-1.jpg" alt="Stow: Zip, Unzip &amp; Archive: Choose Files for a new archive on iPhone (iPhone)" width="663" height="1440" loading="lazy" decoding="async"></a><figcaption><strong>iPhone</strong><span lang="en">Choose Files for a new archive on iPhone</span></figcaption></figure><figure><a href="assets/gallery/pad-2.jpg"><img lang="en" src="assets/gallery/pad-2.jpg" alt="Stow: Zip, Unzip &amp; Archive: Archive work queue on iPad (iPad)" width="1440" height="1079" loading="lazy" decoding="async"></a><figcaption><strong>iPad</strong><span lang="en">Archive work queue on iPad</span></figcaption></figure></div></section>
+<!-- OFFICIAL-GALLERY:END -->
+<section class="section section-alt" id="features">
       <div class="shell">
         <div class="section-header"><p class="eyebrow" data-i18n="feature_eyebrow">Everything in its place</p><h2 data-i18n="feature_title">Archive work without the clutter.</h2><p data-i18n="feature_copy">Stow keeps the common path simple, then gives you the control you need when a file deserves more care.</p></div>
         <div class="feature-grid">
@@ -122,5 +145,6 @@
   <script>
     (function () { const button = document.querySelector('.nav-toggle'); const links = document.querySelector('#site-links'); const langButton = document.querySelector('.lang-button'); const langMenu = document.querySelector('.lang-menu'); if (button && links) { button.addEventListener('click', function () { const open = links.dataset.open !== 'true'; links.dataset.open = String(open); button.setAttribute('aria-expanded', String(open)); }); } if (langButton && langMenu) { langButton.addEventListener('click', function () { const open = !langMenu.classList.contains('open'); langMenu.classList.toggle('open', open); langButton.setAttribute('aria-expanded', String(open)); }); } document.addEventListener('click', function (event) { if (button && links && !links.contains(event.target) && !button.contains(event.target)) { links.dataset.open = 'false'; button.setAttribute('aria-expanded', 'false'); } if (langButton && langMenu && !langMenu.contains(event.target) && !langButton.contains(event.target)) { langMenu.classList.remove('open'); langButton.setAttribute('aria-expanded', 'false'); } }); }());
   </script>
+  <script src="gallery.js" defer></script>
 </body>
 </html>

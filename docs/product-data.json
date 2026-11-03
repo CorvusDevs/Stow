@@ -1,0 +1,25 @@
+{
+  "slug": "Stow",
+  "name": "Stow",
+  "appStoreId": 6801190003,
+  "version": "1.0.2",
+  "releaseDate": "2026-09-24T04:30:36Z",
+  "originalReleaseDate": "2026-08-21T07:00:00Z",
+  "platforms": [
+    "macOS",
+    "iPhone",
+    "iPad"
+  ],
+  "requirements": {
+    "macOS": "15.0",
+    "iOS": "26.0",
+    "iPadOS": "26.0"
+  },
+  "store": {
+    "kind": "app-store",
+    "label": "App Store",
+    "url": "https://apps.apple.com/app/id6801190003"
+  },
+  "metadataSource": "https://itunes.apple.com/lookup?id=6801190003&country=us",
+  "sourceCatalog": "https://corvusdevs.github.io/apps.json"
+}
